@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>RevitAddin.JsonExample Application</Name>
+    <Assembly>RevitAddin.JsonExample.dll</Assembly>
+    <FullClassName>RevitAddin.JsonExample.Revit.App</FullClassName>
+    <ClientId>7232f9d5-eeea-4e92-8ebc-bc7b38139666</ClientId>
+    <VendorId>RevitAddin.JsonExample</VendorId>
+    <VendorDescription>RevitAddin.JsonExample</VendorDescription>
+    <AllowLoadingIntoExistingSession>true</AllowLoadingIntoExistingSession>
+  </AddIn>
+</RevitAddIns>
