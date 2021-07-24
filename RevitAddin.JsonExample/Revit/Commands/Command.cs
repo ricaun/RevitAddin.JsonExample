@@ -17,14 +17,9 @@ namespace RevitAddin.JsonExample.Revit.Commands
 
             var obj = new MyClass() { Name = "Luiz", Last = "Cassettari", ElementId = new ElementId(100000) };
 
-            //obj.Skills.Add(new MySkills() { Name = "Revit", Level = 5 });
-            //obj.Skills.Add(new MySkills() { Name = "C#", Level = 8 });
-            //obj.Skills.Add(new MySkills() { Name = "Arduino", Level = 8 });
-
             var str = javaScriptService.Serialize(obj);
 
             System.Console.WriteLine(str);
-
 
             System.Console.WriteLine(javaScriptService.Serialize(javaScriptService.Deserialize<MyClass>(str)));
 
@@ -36,7 +31,6 @@ namespace RevitAddin.JsonExample.Revit.Commands
             public string Name { get; set; }
             public string Last { get; set; }
             public ElementId ElementId { get; set; }
-            //public List<MySkills> Skills { get; set; } = new List<MySkills>();
         }
 
         class MySkills
