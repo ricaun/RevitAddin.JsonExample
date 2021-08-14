@@ -1,6 +1,12 @@
 # RevitAddin.JsonExample
 
-Use `JavaScriptSerializer` to `Serialize` objects to json format strings and `Deserialize` json string to objects.
+Use `JavaScriptSerializer` and Revit Api objects to `Serialize` and `Deserialize`. 
+
+## ElementIdConverter
+
+This class is used to convert `ElementId` objects to json, this special `JavaScriptConverter` is registered using `RegisterConverters`.
+
+Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs) and [ElementIdConverter.cs](RevitAddin.JsonExample/Services/ElementIdConverter.cs) files.
 
 ### Vídeo
 
