@@ -2,7 +2,6 @@ using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using RevitAddin.JsonExample.Services;
-using System.Collections.Generic;
 
 namespace RevitAddin.JsonExample.Revit.Commands
 {

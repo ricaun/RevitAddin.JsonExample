@@ -1,31 +1,22 @@
-﻿using System.Collections.Generic;
-using System.Web.Script.Serialization;
+﻿using Newtonsoft.Json;
 
 namespace RevitAddin.JsonExample.Services
 {
     public class JavaScriptService
     {
-        private readonly JavaScriptSerializer javaScriptSerializer;
         public JavaScriptService()
         {
-            javaScriptSerializer = new JavaScriptSerializer();
-            RegisterConverter(new ElementIdConverter());
-            //RegisterConverter(new BuiltInCategoryConverter());
-        }
 
-        public void RegisterConverter(JavaScriptConverter javaScriptConverter)
-        {
-            javaScriptSerializer.RegisterConverters(new List<JavaScriptConverter>() { javaScriptConverter });
         }
 
         public string Serialize(object obj)
         {
-            return javaScriptSerializer.Serialize(obj);
+            return JsonConvert.SerializeObject(obj);
         }
 
         public T Deserialize<T>(string str)
         {
-            return javaScriptSerializer.Deserialize<T>(str);
+            return JsonConvert.DeserializeObject<T>(str);
         }
     }
 }

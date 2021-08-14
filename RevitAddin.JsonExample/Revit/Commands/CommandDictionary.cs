@@ -22,15 +22,20 @@ namespace RevitAddin.JsonExample.Revit.Commands
                 obj.Dictionary.Add($"Key {i}", $"Value {i}");
             }
 
-            obj.List.Add(new ClassKey() { Key = BuiltInCategory.OST_ElectricalFixtures, Value = $"Value" });
-
-            //obj.Category.Add(BuiltInCategory.OST_ElectricalFixtures, "T");
+            obj.Category.Add(BuiltInCategory.OST_ElectricalFixtures, "T");
+            obj.Category.Add(BuiltInCategory.OST_LightingDevices, "L");
 
             var str = javaScriptService.Serialize(obj);
 
             System.Console.WriteLine(str);
 
+            var myClass = javaScriptService.Deserialize<MyClass>(str);
+
+            System.Console.WriteLine(myClass.ElementId);
+
             System.Console.WriteLine(javaScriptService.Serialize(javaScriptService.Deserialize<MyClass>(str)));
+
+            TaskDialog.Show("Json", javaScriptService.Serialize(javaScriptService.Deserialize<MyClass>(str)));
 
             return Result.Succeeded;
         }
@@ -38,16 +43,9 @@ namespace RevitAddin.JsonExample.Revit.Commands
         class MyClass
         {
             public Dictionary<string, string> Dictionary { get; set; } = new Dictionary<string, string>();
-
-            public List<ClassKey> List { get; set; } = new List<ClassKey>();
-
-            //public Dictionary<BuiltInCategory, string> Category { get; set; } = new Dictionary<BuiltInCategory, string>();
+            public ElementId ElementId { get; set; } = new ElementId(200002);
+            public Dictionary<BuiltInCategory, string> Category { get; set; } = new Dictionary<BuiltInCategory, string>();
         }
 
-        public class ClassKey
-        {
-            public BuiltInCategory Key { get; set; }
-            public string Value { get; set; }
-        }
     }
 }
