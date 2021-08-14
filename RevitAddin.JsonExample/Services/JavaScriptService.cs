@@ -10,7 +10,6 @@ namespace RevitAddin.JsonExample.Services
         {
             javaScriptSerializer = new JavaScriptSerializer();
             RegisterConverter(new ElementIdConverter());
-            //RegisterConverter(new BuiltInCategoryConverter());
         }
 
         public void RegisterConverter(JavaScriptConverter javaScriptConverter)
