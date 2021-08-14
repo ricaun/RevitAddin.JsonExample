@@ -1,16 +1,19 @@
 # RevitAddin.JsonExample
 
-Use `JavaScriptSerializer` and Revit Api objects to `Serialize` and `Deserialize`. 
+Use `Newtonsoft.Json` and Revit Api objects to `Serialize` and `Deserialize`. 
 
-## ElementIdConverter
-
-This class is used to convert `ElementId` objects to json, this special `JavaScriptConverter` is registered using `RegisterConverters`.
-
-Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs) and [ElementIdConverter.cs](RevitAddin.JsonExample/Services/ElementIdConverter.cs) files.
+Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs).
 
 ### Vídeo
 
 [![VideoIma]][Video]
+
+
+### Old JavaScriptSerializer
+
+This Example starts with the `JavaScriptSerializer` Class to `Serialize` and `Deserialize`.
+
+Check the [JavaScriptSerializer](tree/JavaScriptSerializer) tree.
 
 ## License
 
@@ -20,5 +23,5 @@ This library is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia
 
 Do you like this project? Please [star this project on GitHub](https://github.com/ricaun/RevitAddin.JsonExample/stargazers)!
 
-[Video]: https://youtu.be/TrlHLiikA6g
-[VideoIma]: https://img.youtube.com/vi/TrlHLiikA6g/hqdefault.jpg
+[Video]: https://youtu.be/QgiELO9Ndn4
+[VideoIma]: https://img.youtube.com/vi/QgiELO9Ndn4/hqdefault.jpg
