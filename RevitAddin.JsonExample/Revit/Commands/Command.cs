@@ -15,7 +15,7 @@ namespace RevitAddin.JsonExample.Revit.Commands
 
             JavaScriptService javaScriptService = new JavaScriptService();
 
-            var obj = new MyClass() { Name = "Luiz", Last = "Cassettari", ElementId = new ElementId(100000) };
+            var obj = new MyClass() { Name = "Luiz", Last = "Cassettari", ElementId = new ElementId(100000), BuiltInCategory = BuiltInCategory.OST_ElectricalFixtures };
 
             var str = javaScriptService.Serialize(obj);
 
@@ -31,6 +31,7 @@ namespace RevitAddin.JsonExample.Revit.Commands
             public string Name { get; set; }
             public string Last { get; set; }
             public ElementId ElementId { get; set; }
+            public BuiltInCategory BuiltInCategory { get; set; }
         }
 
         class MySkills
@@ -40,3 +41,4 @@ namespace RevitAddin.JsonExample.Revit.Commands
         }
     }
 }
+

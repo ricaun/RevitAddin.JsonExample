@@ -188,6 +188,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Revit\App.cs" />
+    <Compile Include="Revit\Commands\CommandDictionary.cs" />
     <Compile Include="Revit\Commands\Command.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ElementIdConverter.cs" />
