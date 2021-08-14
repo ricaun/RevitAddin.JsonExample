@@ -13,7 +13,7 @@ Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptServi
 
 This Example starts with the `JavaScriptSerializer` Class to `Serialize` and `Deserialize`.
 
-Check the [JavaScriptSerializer](tree/JavaScriptSerializer) tree.
+Check the [JavaScriptSerializer](https://github.com/ricaun/RevitAddin.JsonExample/tree/JavaScriptSerializer) tree.
 
 ## License
 
