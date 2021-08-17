@@ -1,8 +1,8 @@
 # RevitAddin.JsonExample
 
-Use `Newtonsoft.Json` and Revit Api objects to `Serialize` and `Deserialize`. 
+Use [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) Package and Revit Api objects to `Serialize` and `Deserialize`. 
 
-Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs).
+Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs) base service.
 
 ### Video
 
