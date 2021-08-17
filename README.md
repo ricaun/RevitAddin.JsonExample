@@ -4,9 +4,20 @@ Use `Newtonsoft.Json` and Revit Api objects to `Serialize` and `Deserialize`.
 
 Check the [JavaScriptService.cs](RevitAddin.JsonExample/Services/JavaScriptService.cs).
 
-### Vídeo
+### Video
 
 [![VideoIma]][Video]
+
+
+### PackageReference
+
+You could and the Package Reference using the [Nuget](https://www.nuget.org/packages/Newtonsoft.Json/) or adding the reference below on the `.csproj` file.
+
+```xml
+<ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" IncludeAssets="build; compile" />
+</ItemGroup>
+```
 
 
 ### Old JavaScriptSerializer
